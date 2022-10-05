@@ -51,3 +51,24 @@ end
 # p rampant_repeats('feverish', {'e'=>2, 'f'=>4, 's'=>3}) # 'ffffeeveerisssh'
 # p rampant_repeats('misispi', {'s'=>2, 'p'=>2})          # 'mississppi'
 # p rampant_repeats('faarm', {'e'=>3, 'a'=>2})            # 'faaaarm'
+
+def perfect_square?(num)
+    (1..num).each do |factor|
+        if factor * factor == num
+            return true
+        end
+    end
+    return false
+end
+
+# puts "must be true"
+# p perfect_square?(1)     # true
+# p perfect_square?(4)     # true
+# p perfect_square?(64)    # true
+# p perfect_square?(100)   # true
+# p perfect_square?(169)   # true
+# puts "must be false"
+# p perfect_square?(2)     # false
+# p perfect_square?(40)    # false
+# p perfect_square?(32)    # false
+# p perfect_square?(50)    # false
