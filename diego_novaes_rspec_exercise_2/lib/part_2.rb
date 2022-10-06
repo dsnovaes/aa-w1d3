@@ -42,6 +42,6 @@ def palindrome_substrings(str)
     substrings(str).select { |ele| palindrome?(ele) && ele.length > 1 }
 end
 
-p palindrome_substrings("abracadabra")
-p palindrome_substrings("madam")
-p palindrome_substrings("taco")
+# p palindrome_substrings("abracadabra")
+# p palindrome_substrings("madam")
+# p palindrome_substrings("taco")
