@@ -14,7 +14,7 @@ def anti_prime?(num)
     return true
 end
 
-# puts "must be true"clear
+# puts "must be true"
 # p anti_prime?(24)   # true
 # p anti_prime?(36)   # true
 # p anti_prime?(48)   # true
@@ -35,7 +35,7 @@ def matrix_addition(mtx1, mtx2) # [[2,5], [4,7]] and [[9,1], [3,0]]
         mtx1[i].each_with_index do |ele,idx|
             subArr << mtx1[i][idx] + mtx2[i][idx]
         end
-        result<< subArr
+        result << subArr
         i += 1
     end
     result

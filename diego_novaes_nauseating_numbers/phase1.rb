@@ -38,11 +38,12 @@ end
 def rampant_repeats(str, hash)
     new_str = ""
     str.each_char do |char|
-        if hash.has_key?(char)
-            new_str += char * hash[char]
-        else
-            new_str += char
-        end
+        # if hash.has_key?(char)
+        #     new_str += char * hash[char]
+        # else
+        #     new_str += char
+        # end
+        hash.has_key?(char) ? new_str += char * hash[char] : new_str += char
     end
     new_str
 end
